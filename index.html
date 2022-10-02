@@ -1,33 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | NFT preview card component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-  Equilibrium #3429
-
-  Our Equilibrium collection promotes balance and calm.
-
-  0.041 ETH
-  3 days left
-  
-  Creation of Jules Wyvern
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Frontend Mentor | NFT preview card component</title>
+  </head>
+  <body>
+    <main class="card">
+      <img
+        class="card__image"
+        src="./images/image-equilibrium.jpg"
+        alt="Equilibrium design image"
+      />
+      <section class="card__text-content">
+        <h1 class="card__title">Equilibrium #3429</h1>
+        <p class="card__description">
+          Our Equilibrium collection promotes balance and calm.
+        </p>
+        <section class="card__bottom">
+          <div class="card__price">
+            <img src="./images/icon-ethereum.svg" aria-hidden="true" />
+            <p>0.041 ETH</p>
+          </div>
+          <div class="card__expiration">
+            <img src="./images/icon-clock.svg" aria-hidden="true" />
+            <p>3 days left</p>
+          </div>
+        </section>
+        <hr class="card__line" />
+        <section class="card__artist-profile">
+          <img
+            class="card__artist-image"
+            src="./images/image-avatar.png"
+            alt="Card artist picture"
+          />
+          <p class="card__artist-presentation">
+            Creation of <span class="card__artist-name">Jules Wyvern</span>
+          </p>
+        </section>
+      </section>
+    </main>
+  </body>
 </html>

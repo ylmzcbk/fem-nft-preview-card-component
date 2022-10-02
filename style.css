@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+:root {
+  /* Colors */
+  --color-soft-blue: hsl(215, 51%, 70%);
+  --color-cyan: hsl(178, 100%, 50%);
+  --color-very-dark-blue-main: hsl(217, 54%, 11%);
+  --color-very-dark-blue-card: hsl(216, 50%, 16%);
+  --color-very-dark-blue-line: hsl(215, 32%, 27%);
+  --color-white: hsl(0, 0%, 100%);
+
+  /* Fonts */
+  --font-outfit: "Outfit", sans-serif;
+  --font-weight-thin: 300;
+  --font-weight-regular: 400;
+  --font-weight-bold: 600;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+
+  background-color: var(--color-very-dark-blue-main);
+  color: var(--color-white);
+  font-family: var(--font-outfit);
+  font-size: 1.8rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  background-color: var(--color-very-dark-blue-card);
+  border-radius: 1.5rem;
+  max-width: 37.5rem;
+  padding: 2.75rem;
+}
+
+.card__image {
+  max-width: 100%;
+  border-radius: 1.5rem;
+}
+
+.card__text-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.card__title {
+  font-size: 2.25rem;
+  font-weight: var(--font-weight-bold);
+}
+
+.card__description {
+  color: var(--color-soft-blue);
+  font-weight: var(--font-weight-thin);
+  line-height: 3rem;
+}
+
+.card__bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card__price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--color-cyan);
+}
+
+.card__expiration {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--color-soft-blue);
+}
+
+.card__line {
+  border: 0.1rem solid var(--color-very-dark-blue-line);
+}
+
+.card__artist-profile {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.card__artist-image {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+
+  border: 0.1rem solid var(--color-white);
+}
+
+.card__artist-presentation {
+  color: var(--color-soft-blue);
+}
+
+.card__artist-name {
+  color: var(--color-white);
+}
