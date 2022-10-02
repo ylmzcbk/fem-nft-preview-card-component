@@ -38,6 +38,17 @@ body {
   font-size: 1.8rem;
 }
 
+a {
+  text-decoration: none;
+  color: var(--color-white);
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .card {
   display: flex;
   flex-direction: column;
@@ -78,7 +89,6 @@ body {
 
 .card__image:hover .card__image-overlay {
   opacity: 0.5;
-  cursor: pointer;
 }
 
 .card__text-content {
@@ -95,7 +105,6 @@ body {
 
 .card__title:hover {
   color: var(--color-cyan);
-  cursor: pointer;
 }
 
 .card__description {
@@ -107,21 +116,20 @@ body {
 .card__bottom {
   display: flex;
   justify-content: space-between;
+  height: 100%;
+}
+
+.card__bottom-container {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
 }
 
 .card__price {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0.5rem;
   color: var(--color-cyan);
 }
 
 .card__expiration {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0.5rem;
   color: var(--color-soft-blue);
 }
 
@@ -154,5 +162,4 @@ body {
 
 .card__artist-name:hover {
   color: var(--color-cyan);
-  cursor: pointer;
 }
